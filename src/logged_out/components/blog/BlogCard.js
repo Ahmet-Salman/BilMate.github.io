@@ -75,9 +75,6 @@ function BlogCard(props) {
         </Link>
         <Typography variant="body1" color="textSecondary">
           {snippet}
-          <Link to={url} className={classes.noDecoration} tabIndex={-1}>
-            <span className={classes.link}> read more...</span>
-          </Link>
         </Typography>
       </Box>
     </Card>

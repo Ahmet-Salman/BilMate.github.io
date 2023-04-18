@@ -88,7 +88,7 @@ function BlogPost(props) {
           </Grid>
           <Grid item md={3}>
             <Typography variant="h6" paragraph>
-              Other articles
+              Other Documents
             </Typography>
             {otherArticles.map((blogPost) => (
               <Box key={blogPost.id} mb={3}>

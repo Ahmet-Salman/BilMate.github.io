@@ -59,12 +59,7 @@ function NavBar(props) {
       link: "/documents",
       name: "Documents",
       icon: <BookIcon className="text-white" />
-    },
-    {
-        name: "About Us",
-        onClick: openRegisterDialog,
-        icon: <HowToRegIcon className="text-white" />
-      },
+    }
     // {
     //   name: "Register",
     //   onClick: openRegisterDialog,
