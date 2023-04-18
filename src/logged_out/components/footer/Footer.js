@@ -1,21 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
 import {
-  Grid,
-  Typography,
   Box,
-  IconButton,
+  Grid,
   Hidden,
-  withStyles,
-  withWidth,
+  IconButton,
+  Typography,
   isWidthUp,
-  TextField
+  withStyles,
+  withWidth
 } from "@material-ui/core";
-import PhoneIcon from "@material-ui/icons/Phone";
-import MailIcon from "@material-ui/icons/Mail";
-import WaveBorder from "../../../shared/components/WaveBorder";
 import transitions from "@material-ui/core/styles/transitions";
-import ColoredButton from "../../../shared/components/ColoredButton";
+import MailIcon from "@material-ui/icons/Mail";
+import PhoneIcon from "@material-ui/icons/Phone";
+import PropTypes from "prop-types";
+import React from "react";
 
 const styles = theme => ({
   footerInner: {
@@ -117,12 +114,18 @@ function Footer(props) {
 
           <Grid item xs={12} md={8} lg={4} style={{padding:0}}>
             <Typography variant="h6" paragraph className="text-white">
-              About the Company
+              About the Team
             </Typography>
 
             <Typography style={{ color: "#8f9296" }} paragraph>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-              vehicula sit amet.
+            The team behind the flatmate sharing app is a group of highly 
+            motivated and talented graduates from Bilkent University. We 
+            have a diverse range of academic backgrounds, including computer 
+            science, engineering, and business, and graphic designers which gives 
+            us a unique perspective when it comes to developing innovative solutions 
+            for everyday problems.
+            <br></br>
+            If you are interested in working with us, don't hesitate to contact us :)) 
             </Typography>
           </Grid>
         </Grid>

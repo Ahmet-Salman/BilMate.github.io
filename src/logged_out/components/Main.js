@@ -82,7 +82,6 @@ function Main(props) {
       title = title.replace(/\s{2,}/g, " ");
       /* Replace space with a '-' symbol */
       title = title.replace(/\s/g, "-");
-      // blogPost.url = `/blog/post/${title}`;
       blogPost.url = `/documents/post/${title}`;
       blogPost.params = `?id=${blogPost.id}`;
       return blogPost;
@@ -115,10 +114,10 @@ function Main(props) {
         openRegisterDialog={openRegisterDialog}
         openChangePasswordDialog={openChangePasswordDialog}
       />
-      <CookieRulesDialog
+      {/* <CookieRulesDialog
         open={isCookieRulesDialogOpen}
         onClose={handleCookieRulesDialogClose}
-      />
+      /> */}
       <NavBar
         selectedTab={selectedTab}
         selectTab={setSelectedTab}
