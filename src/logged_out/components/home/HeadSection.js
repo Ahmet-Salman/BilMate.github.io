@@ -130,8 +130,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Free Template for building a WebPage using
-                          Material-UI
+                          Welcome to BilMate Your Housemate Broker
                         </Typography>
                       </Box>
                       <div>
@@ -140,8 +139,21 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            BilMate is a mobile application that allows students to find suitable
+                            roommates both in university dorms and in flats/apartments.
+                            The matching is done by feeding an algorithm a vector of 
+                            parameters indicating the preferences of the user.
+                            <br></br>
+                            &emsp;&emsp;BilMate will bring sustained 
+                            innovation into the market of house-sharing 
+                            in Turkey in the form of a service that will 
+                            transform the way students choose their roommates 
+                            or find a proper place to live in. 
+                            Rather than going through 10s or even 100s 
+                            of people trying to find a suitable room 
+                            and roommate combination, BilMate will optimize 
+                            that process by allowing the user to decide for 
+                            himself/herself what a suitable roommate should be.
                           </Typography>
                         </Box>
                         <Button
@@ -152,7 +164,7 @@ function HeadSection(props) {
                           classes={{ label: classes.extraLargeButtonLabel }}
                           href="https://github.com/wonderfullandingpage/Technology-LandingPage"
                         >
-                          Download from GitHub
+                          Download from the Google Play Store
                         </Button>
                       </div>
                     </Box>
@@ -160,9 +172,9 @@ function HeadSection(props) {
                   <Hidden smDown>
                     <Grid item md={6}>
                       <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
+                        src={`${process.env.PUBLIC_URL}/images/logged_out/Poster.jpeg`}
                         className={classes.image}
-                        alt="header example"
+                        alt="Poster Image"
                       />
                     </Grid>
                   </Hidden>

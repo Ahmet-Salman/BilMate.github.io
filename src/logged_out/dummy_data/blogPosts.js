@@ -91,7 +91,7 @@ const posts = [
     id: 1,
     date: 1665997200,
     src: `${process.env.PUBLIC_URL}/images/logged_out/projectSpec.jpg`,
-    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/T2335_Project_Specification_Document.pdf`} class="alert-link">Here</a></h4>,
+    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Project_Specification_Document.pdf`} class="alert-link">Here</a></h4>,
     content: content,
   },
   {
@@ -99,7 +99,7 @@ const posts = [
     id: 2,
     date: 1668330000,
     src: `${process.env.PUBLIC_URL}/images/logged_out/projAnalysis.jpg`,
-    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/T2335_Analysis_Requirements_Report.pdf`} class="alert-link">Here</a></h4>,
+    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Analysis_Requirements_Report.pdf`} class="alert-link">Here</a></h4>,
     content: content,
   },
   {
@@ -107,7 +107,7 @@ const posts = [
     id: 3,
     date: 1672304400,
     src: `${process.env.PUBLIC_URL}/images/logged_out/demoPres.png`,
-    snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
+    snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
     content: content,
   },
   {
@@ -115,7 +115,7 @@ const posts = [
     id: 4,
     date: 1678698000,
     src: `${process.env.PUBLIC_URL}/images/logged_out/DetailedDesign.png`,
-    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/T2335_Detail_Design_Document.pdf`} class="alert-link">Here</a></h4>,
+    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Detail_Design_Document.pdf`} class="alert-link">Here</a></h4>,
     content: content,
   }
   // {
@@ -123,7 +123,7 @@ const posts = [
   //   id: 5,
   //   date: 1684486800,
   //   src: `${process.env.PUBLIC_URL}/images/logged_out/finalRep.png`,
-  //   snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
+  //   snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
   //   content: content,
   // },
   // {
@@ -131,7 +131,7 @@ const posts = [
   //   id: 6,
   //   date: 1684746000,
   //   src: `${process.env.PUBLIC_URL}/images/logged_out/finalPres.png`,
-  //   snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
+  //   snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
   //   content: content,
   // },
 ];

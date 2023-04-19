@@ -74,7 +74,8 @@ function PricingSection(props) {
                   <Typography display="inline"> / month</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              // features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={[<p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
           <Grid
@@ -93,7 +94,7 @@ function PricingSection(props) {
                   <Typography display="inline"> / month</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21903645_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
             />
           </Grid>
           <Grid
@@ -113,7 +114,7 @@ function PricingSection(props) {
                   <Typography display="inline"> / month</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
             />
           </Grid>
           <Grid
@@ -133,7 +134,7 @@ function PricingSection(props) {
                   <Typography display="inline"> / month</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902435_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
             />
           </Grid>
           <Grid
@@ -153,7 +154,7 @@ function PricingSection(props) {
                   <Typography display="inline"> / month</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
             />
           </Grid>
         </Grid>
