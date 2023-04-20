@@ -1,19 +1,18 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import ParticlesBg from 'particles-bg'
 import {
-  Grid,
-  Typography,
-  Card,
-  Button,
-  Hidden,
   Box,
+  Button,
+  Card,
+  Grid,
+  Hidden,
+  Typography,
+  isWidthUp,
   withStyles,
   withWidth,
-  isWidthUp,
 } from "@material-ui/core";
-import WaveBorder from "../../../shared/components/WaveBorder";
+import classNames from "classnames";
+import ParticlesBg from 'particles-bg';
+import PropTypes from "prop-types";
+import React, { Fragment } from "react";
 import ZoomImage from "../../../shared/components/ZoomImage";
 
 const styles = (theme) => ({
@@ -144,7 +143,8 @@ function HeadSection(props) {
                             The matching is done by feeding an algorithm a vector of 
                             parameters indicating the preferences of the user.
                             <br></br>
-                            &emsp;&emsp;BilMate will bring sustained 
+                            &emsp;&emsp;
+                            BilMate will bring sustained 
                             innovation into the market of house-sharing 
                             in Turkey in the form of a service that will 
                             transform the way students choose their roommates 

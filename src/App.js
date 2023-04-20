@@ -5,8 +5,6 @@ import GlobalStyles from "./GlobalStyles";
 import Pace from "./shared/components/Pace";
 import theme from "./theme";
 
-// const LoggedInComponent = lazy(() => import("./logged_in/components/Main"));
-
 const LoggedOutComponent = lazy(() => import("./logged_out/components/Main"));
 
 function App() {

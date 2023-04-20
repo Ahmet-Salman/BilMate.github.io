@@ -4,7 +4,6 @@ import classNames from "classnames";
 import format from "date-fns/format";
 import { Grid, Typography, Card, Box, withStyles } from "@material-ui/core";
 import BlogCard from "./BlogCard";
-import ShareButton from "../../../shared/components/ShareButton";
 import ZoomImage from "../../../shared/components/ZoomImage";
 import smoothScrollTop from "../../../shared/functions/smoothScrollTop";
 
@@ -62,27 +61,6 @@ function BlogPost(props) {
               <ZoomImage className={classes.img} src={src} alt="" />
               <Box p={3}>
                 {content}
-                <Box pt={2}>
-                  <Grid spacing={1} container>
-                    {["Facebook", "Twitter", "Reddit", "Tumblr"].map(
-                      (type, index) => (
-                        <Grid item key={index}>
-                          <ShareButton
-                            type={type}
-                            title="React Web Template"
-                            description="I found an awesome template for an webapp using React!"
-                            disableElevation
-                            variant="contained"
-                            className="text-white"
-                            classes={{
-                              label: "text-white",
-                            }}
-                          />
-                        </Grid>
-                      )
-                    )}
-                  </Grid>
-                </Box>
               </Box>
             </Card>
           </Grid>

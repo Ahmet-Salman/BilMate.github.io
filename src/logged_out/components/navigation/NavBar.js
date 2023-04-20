@@ -1,18 +1,18 @@
-import React, { memo } from "react";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
 import {
   AppBar,
-  Toolbar,
-  Typography,
   Button,
   Hidden,
   IconButton,
+  Toolbar,
+  Typography,
   withStyles
 } from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
-import HomeIcon from "@material-ui/icons/Home";
 import BookIcon from "@material-ui/icons/Book";
+import HomeIcon from "@material-ui/icons/Home";
+import MenuIcon from "@material-ui/icons/Menu";
+import PropTypes from "prop-types";
+import React, { memo } from "react";
+import { Link } from "react-router-dom";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 
 const styles = theme => ({
