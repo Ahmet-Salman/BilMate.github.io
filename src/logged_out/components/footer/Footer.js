@@ -114,18 +114,19 @@ function Footer(props) {
 
           <Grid item xs={12} md={8} lg={4} style={{padding:0}}>
             <Typography variant="h6" paragraph className="text-white">
-              About the Team
+              About Us
             </Typography>
 
             <Typography style={{ color: "#8f9296" }} paragraph>
-            The team behind the flatmate sharing app is a group of highly 
+            We are Ghost in The Toast (GiT), we are the team behind
+            flatmate sharing app, BilMate. Our group consists of highly 
             motivated and talented graduates from Bilkent University. We 
             have a diverse range of academic backgrounds, including computer 
-            science, engineering, and business, and graphic designers which gives 
+            engineering, business, and graphic design which gives 
             us a unique perspective when it comes to developing innovative solutions 
             for everyday problems.
             <br></br>
-            If you are interested in working with us, don't hesitate to contact us :)) 
+            If you are interested in a colaboration, don't hesitate to contact us
             </Typography>
           </Grid>
         </Grid>

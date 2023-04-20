@@ -6,10 +6,10 @@ import VertOptions from "./VertOptions";
 
 const styles = {
   imageContainer: {
-    width: "100%",
-    paddingTop: "100%",
+    width: "50%",
+    paddingTop: "50%",
     overflow: "hidden",
-    position: "relative",
+    position: "right",
   },
   image: {
     position: "absolute",

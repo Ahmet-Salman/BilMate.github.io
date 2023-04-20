@@ -12,8 +12,6 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
-import HowToRegIcon from "@material-ui/icons/HowToReg";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
 import BookIcon from "@material-ui/icons/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
 
@@ -42,8 +40,6 @@ const styles = theme => ({
 function NavBar(props) {
   const {
     classes,
-    openRegisterDialog,
-    openLoginDialog,
     handleMobileDrawerOpen,
     handleMobileDrawerClose,
     mobileDrawerOpen,
@@ -60,16 +56,6 @@ function NavBar(props) {
       name: "Documents",
       icon: <BookIcon className="text-white" />
     }
-    // {
-    //   name: "Register",
-    //   onClick: openRegisterDialog,
-    //   icon: <HowToRegIcon className="text-white" />
-    // },
-    // {
-    //   name: "Login",
-    //   onClick: openLoginDialog,
-    //   icon: <LockOpenIcon className="text-white" />
-    // }
   ];
   
   return (
@@ -83,7 +69,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              BilMate
+              <a style={{color: "black", textDecoration: "none"}} href="/">BilMate</a>
             </Typography>
           </div>
           <div>

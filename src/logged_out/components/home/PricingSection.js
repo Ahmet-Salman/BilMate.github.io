@@ -49,8 +49,8 @@ function PricingSection(props) {
   const { width, classes } = props;
   return (
     <div className="lg-p-top" style={{ backgroundColor: "#FFFFFF" }}>
-      <Typography variant="h3" align="center" className="lg-mg-bottom">
-        Pricing
+      <Typography variant="h3" align="center" className="mg-bottom">
+        The Team
       </Typography>
       <div className={classNames("container-fluid", classes.containerFix)}>
         <Grid
@@ -68,14 +68,8 @@ function PricingSection(props) {
           >
             <PriceCard
               title="Onuralp Avcı"
-              pricing={
-                <span>
-                  $14.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              // features={["Feature 1", "Feature 2", "Feature 3"]}
-              features={[<p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`} class="alert-link">Here</a></p>]}
+              image={<img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Onuralp" />}
+              features={["Android Developer", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
           <Grid
@@ -88,13 +82,12 @@ function PricingSection(props) {
           >
             <PriceCard
               title="Javid Moradi"
-              pricing={
-                <span>
-                  $14.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
+              image={
+              <div style={{ float: "right", textAlign: "center" }}>
+                <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Javid" />
+              </div>
               }
-              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21903645_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
+              features={["Android Developer", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21903645_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
           <Grid
@@ -102,19 +95,18 @@ function PricingSection(props) {
             className={classes.cardWrapper}
             xs={12}
             sm={6}
-            lg={4}
+            lg={6}
             data-aos="zoom-in-up"
             data-aos-delay={isWidthUp("md", width) ? "400" : "0"}
           >
             <PriceCard
               title="Ahmet Salman"
-              pricing={
-                <span>
-                  $49.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
+              image={
+                <div style={{ float: "right", textAlign: "center" }}>
+                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Ahmet" />
+                </div>
+                }
+              features={["AWS Integration", "DB Designer", "MongoDB Developer", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
           <Grid
@@ -122,19 +114,18 @@ function PricingSection(props) {
             className={classes.cardWrapper}
             xs={12}
             sm={6}
-            lg={4}
+            lg={6}
             data-aos="zoom-in-up"
             data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
           >
             <PriceCard
               title="Atasagun Samed Şanap"
-              pricing={
-                <span>
-                  $99.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902435_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
+              image={
+                <div style={{ float: "right", textAlign: "center" }}>
+                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Atasagun" />
+                </div>
+                }
+              features={["Backend Developer", "Graphic Designer", "Monetization Startegist", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902435_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
           <Grid
@@ -142,19 +133,18 @@ function PricingSection(props) {
             className={classes.cardWrapper}
             xs={12}
             sm={6}
-            lg={4}
+            lg={6}
             data-aos="zoom-in-up"
             data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
           >
             <PriceCard
               title="Ebrar Bozkurt"
-              pricing={
-                <span>
-                  $99.99
-                  <Typography display="inline"> / month</Typography>
-                </span>
-              }
-              features={["Feature 1", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>, "Feature 3"]}
+              image={
+                <div style={{ float: "right", textAlign: "center" }}>
+                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Ebrar" />
+                </div>
+                }
+              features={["Security Expert", "Backend Developer", <p>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></p>]}
             />
           </Grid>
         </Grid>

@@ -98,7 +98,7 @@ const posts = [
     title: "Analysis Requirement Report",
     id: 2,
     date: 1668330000,
-    src: `${process.env.PUBLIC_URL}/images/logged_out/projAnalysis.jpg`,
+    src: `${process.env.PUBLIC_URL}/images/logged_out/projAnalysis.png`,
     snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Analysis_Requirements_Report.pdf`} class="alert-link">Here</a></h4>,
     content: content,
   },

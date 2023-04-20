@@ -162,7 +162,7 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/wonderfullandingpage/Technology-LandingPage"
+                          href="https://play.google.com/store/apps/details?id=com.bil.bilmate"
                         >
                           Download from the Google Play Store
                         </Button>
