@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmet Salman's Logbook</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main role="main" class="container mt-5">
+	<h2>
+	Name: Ahmet Salman
+	<br>
+	Project ID: T2335
+	<br>
+	Porject Name: BilMate
+	</h2>
+        <div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    18/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            Logbook created.
+            <br>All the logs regarding the senior project will be noted here.
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    19/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I began working on my assigned UML diagram which was the Object Diagram
+			<br>
+			I also created the boilerplate for the Analysis report
+            <br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    20/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I had stumbled when it came to retreiving a single posting from the MongoDB document. There were
+			2 solutions, the first is retreiving the entire document, then simply comparing everything in a for loop.
+			The second solution was to use the aggregate function of MongoDB.
+			In terms of response time, both were very similar with the for loop approach being slightly faster
+			However, the aggregate approach saves alot of network bandwidth, so because our application is a 
+			Mobile application, i have decided to go with the aggregate approach
+			<br>
+			I finished the Object diagram and planning to arrange a meeting to discuss possible improvements
+            <br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    21/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            The backend team held a meeting to discuss the Object diagram as
+			the design of the backend should not be left to a single person
+			We decided to improve the design by removing the "stayDuration" field 
+			from the user preference and add "startDate" and "endDate" as fields for
+			a posting, this will give the user more flexibility and allow them
+			to plan ahead 
+			<br>
+			After the meeting, I went to modify the Object diagram to reflect our design choices better
+            <br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    22/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I started implementation from about the 4th week 
+			and started writing the basic endpoints such as
+			creating/getting/updating/deleting a user and the
+			same CRUD operations for postings, however i am working with
+			a subset of the full fields for incremental progress
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    24/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            The first big challenge about our matching algorithm has arrived,
+			how can we retrieve potentially 100s of postings and sort them in order
+			of decreasing matching based on user preference while maintaining fast 
+			response time.
+			I need to think about it for a good amount of time
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    25/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I have some worries that the performance of the query would be sub-par,
+			In response, I started exploring indexes for the query, the most logical
+			field to begin with was the "id" field for the users as we always search for
+			IDs of users.
+			<br>
+			Another problem is that we cannot get realistic performance, at least at this stage of development
+			so we have to pray and hope for the best for the time being
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    27/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            During the past 2 weeks of development, I only dealt with partial data. What I mean is that if the 
+			user should've had name, surname, phone, and email, I only tested the initial queries with a subset of these.
+			Today i decided to remove that constraint for the user, so the functions now deal with the user as
+			we expect it to look like in the actual program, and naturally, some problems occured. But it is
+			nothing that cannot be solved
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    30/10/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            For the past several days, I implemented the changes in the design document into the code
+			I also extended the models of postings and users, so now the functionalities are fully integrated.
+			I will carry out another review of the Object diagram to ensure that it reflects what our system should look like
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    04/11/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I haven't worked much on BilMate for this week due to midterms, however that 
+			gave me the chance to start thinking about the email verification and the
+			flow of the user actions. I started implementing email verification, but I 
+			still need to consider some edge cases and ensure that the email is recieved
+			properly
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    06/11/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I have completely finished the email verification for the user signup along
+			with refreshing the verification token if it expired. Moreover, I have set up
+			Amazon SES to deal with the email sending
+			I also created an instructions file to run the backend server
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    13/11/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            The midterms have finally come to an end, this allowed
+			me to get back to working on BilMate. This week gave me some time
+			to think about the little details when building the backend.
+			For beginers, I have decided to separate the endpoints for 
+			the 'House Sharer' and 'House Seeker' posts because they have
+			quite different models and may grow even more distinct as we
+			progress in the project. So today I have committed these changes
+			and did some reformmating for better software engineering practices :)))
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    18/12/2022
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            We are making the final touches on the application for the
+			sake of the demo. My teammates in the backend, Ebrar and Atasagun,
+			did a wonderful job with their assigned tasks. Moreover, we decided to
+			include several AWS integrations to ensure scalability when we launch the application
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    08/02/2023
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            This was a tragic week for our nation, may the souls of all the martyrs rest in peace.
+			As expected, not much work was done during these days as we all mourn our great losses and
+			try our hardest to assist our brothers and sisters who were affected by the earthquake.
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    13/03/2023
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            It's been quite a while, welcome back my dear readers.
+			Throughout the past month, we progressed quite a bit.
+			For beginners, I finished the macthing algorithm and deployed it 
+			on the backend.
+			
+			We also spoke to AWS and negotiated a sponsorship deal so they 
+			cover the costs of the backend server until the end of the year in
+			return for including that our application is powered by AWS.
+			Aside from that, we added images to posts and began the final touches
+			on the reporting system and the admin panel.
+			
+			I believe we are set on track for a successful launch of our application
+			towards mid april.
+			<br>
+        </div>
+		<div class="row">
+            <div class="col">
+                <h2 class="mt-5">
+                    17/03/2023
+                </h2>
+                <hr>
+            </div>
+        </div>
+        <div>
+            I have fixed some bugs from the endpoints written in the first semester
+			I have also began implementing some functionalities for the reporting system
+			as well as the admin functionality. Everything is progressing pretty quickly and
+			we hope 
+			<br>
+        </div>
+		
+		
+		
+		
+		
+		<div>
+		<br>
+		<br>
+		<br>
+		<br>
+		</div>
+    </main>
+</body>
+
+</html>
