@@ -3,19 +3,19 @@
   "name": "",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "bilmate-logo.jpeg",
       "sizes": "64x64 32x32 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "favicon-192x192.png",
+      "src": "bilmate-logo.jpeg",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/jpeg"
     },
     {
-      "src": "favicon-512x512.png",
+      "src": "bilmate-logo.jpeg",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/jpeg"
     }
   ],
   "start_url": "./index.html",
