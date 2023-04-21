@@ -34,7 +34,7 @@ function BlogPost(props) {
   const { classes, date, title, src, content, otherArticles } = props;
 
   useEffect(() => {
-    document.title = `Rust - ${title}`;
+    document.title = `${title}`;
     smoothScrollTop();
   }, [title]);
 
