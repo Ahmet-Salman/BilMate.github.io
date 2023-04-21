@@ -31,6 +31,14 @@ function Main(props) {
     setSelectedTab("Home");
   }, [setSelectedTab]);
 
+  const handleMobileDrawerOpen = useCallback(() => {
+    setIsMobileDrawerOpen(true);
+  }, [setIsMobileDrawerOpen]);
+
+  const handleMobileDrawerClose = useCallback(() => {
+    setIsMobileDrawerOpen(false);
+  }, [setIsMobileDrawerOpen]);
+
   const selectBlog = useCallback(() => {
     smoothScrollTop();
     document.title = "Reports";
@@ -62,6 +70,8 @@ function Main(props) {
         selectedTab={selectedTab}
         selectTab={setSelectedTab}
         mobileDrawerOpen={isMobileDrawerOpen}
+        handleMobileDrawerOpen={handleMobileDrawerOpen}
+        handleMobileDrawerClose={handleMobileDrawerClose}
       />
       <Routing
         blogPosts={blogPosts}

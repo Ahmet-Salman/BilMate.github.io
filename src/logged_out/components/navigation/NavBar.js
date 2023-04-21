@@ -47,7 +47,7 @@ function NavBar(props) {
   } = props;
   const menuItems = [
     {
-      link: "/",
+      link: "~/",
       name: "Home",
       icon: <HomeIcon className="text-white" />
     },

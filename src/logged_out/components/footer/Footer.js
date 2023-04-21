@@ -89,9 +89,23 @@ function Footer(props) {
     <footer className="lg-p-top">
       <div className={classes.footerInner}>
         <Grid container spacing={isWidthUp("md", width) ? 10 : 5}>
-          <Hidden mdDown>
-            <Grid item xs={12} md={4} lg={4} style={{padding:0}}>
-              <Box display="flex" justifyContent="center">
+          <Grid item xs={12} md={8} lg={3} style={{padding:6}}>
+            <Typography variant="h6" paragraph className="text-white">
+              About Us
+            </Typography>
+
+            <Typography style={{ color: "#8f9296" }} paragraph>
+            We are Ghost in The Toast (GiT), we are the team behind
+            flatmate sharing app, BilMate. Our group consists of highly 
+            motivated and talented graduates from Bilkent University. We 
+            have a diverse range of academic backgrounds, including computer 
+            engineering, business, and graphic design which gives 
+            us a unique perspective when it comes to developing innovative solutions 
+            for everyday problems.
+            <br></br>
+            If you are interested in a colaboration, don't hesitate to contact us
+            </Typography>
+            <Box display="flex" justifyContent="center">
                 <div>
                   {infos.map((info, index) => (
                     <Box display="flex" mb={1} key={index}>
@@ -109,25 +123,6 @@ function Footer(props) {
                   ))}
                 </div>
               </Box>
-            </Grid>
-          </Hidden>
-
-          <Grid item xs={12} md={8} lg={4} style={{padding:0}}>
-            <Typography variant="h6" paragraph className="text-white">
-              About Us
-            </Typography>
-
-            <Typography style={{ color: "#8f9296" }} paragraph>
-            We are Ghost in The Toast (GiT), we are the team behind
-            flatmate sharing app, BilMate. Our group consists of highly 
-            motivated and talented graduates from Bilkent University. We 
-            have a diverse range of academic backgrounds, including computer 
-            engineering, business, and graphic design which gives 
-            us a unique perspective when it comes to developing innovative solutions 
-            for everyday problems.
-            <br></br>
-            If you are interested in a colaboration, don't hesitate to contact us
-            </Typography>
           </Grid>
         </Grid>
       </div>
