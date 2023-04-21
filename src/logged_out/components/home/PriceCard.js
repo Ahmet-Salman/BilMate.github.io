@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Typography, Box, withStyles } from "@material-ui/core";
 import CheckIcon from "@material-ui/icons/Check";
+import { useMediaQuery } from '@material-ui/core';
 
 const styles = (theme) => ({
   card: {
@@ -31,35 +32,47 @@ const styles = (theme) => ({
 });
 
 function PriceCard(props) {
+  const isMobile = useMediaQuery('(max-width: 800px)');
   const { classes, theme, title, image, features, highlighted } = props;
   return (
     <div className={highlighted ? classes.cardHightlighted : classes.card}>
-      <Box mb={2}>
-        <Typography
-          variant={highlighted ? "h5" : "h6"}
-          className={highlighted ? "text-white" : classes.title}
-        >
-          {title}
-        </Typography>
-      </Box>
-      <Box display="flex" alignItems="center">
-        <Typography variant="h6">
-        {features.map((feature, index) => (
-        <Box display="flex" alignItems="center" mb={1} key={index}>
-            <CheckIcon
-              style={{
-                color: highlighted
-                  ? theme.palette.common.white
-                  : theme.palette.primary.dark,
-              }}
-            /> {feature}
-            </Box>
-          ))}
-        </Typography>
-        <div style={{ marginLeft: "auto", textAlign: "right" }}>{image}</div>
-      </Box>
+  <Box mb={2}>
+    <Typography
+      variant={highlighted ? "h5" : "h6"}
+      className={highlighted ? "text-white" : classes.title}
+    >
+      {title}
+    </Typography>
+  </Box>
+  <Box display="flex" alignItems="center" justifyContent="space-between">
+    <Typography variant="h6">
+    {features.map((feature, index) => (
+    <Box display="flex" alignItems="center" mb={1} key={index}>
+        <CheckIcon
+          style={{
+            color: highlighted
+              ? theme.palette.common.white
+              : theme.palette.primary.dark,
+          }}
+        /> {feature}
+        </Box>
+      ))}
+    </Typography>
+    <div>
+      {isMobile ? 
+        <div></div>
+         : 
+         <span>{image}</span>}
     </div>
-  );
+  </Box>
+  {isMobile ? 
+        <Box display="flex" alignItems="center" justifyContent="center">
+        {image}
+      </Box>
+         : 
+         <div></div>}
+  
+</div>);
 }
 
 PriceCard.propTypes = {
