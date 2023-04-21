@@ -62,7 +62,7 @@ function PriceCard(props) {
       {isMobile ? 
         <div></div>
          : 
-         <span>{image}</span>}
+         <span style={{borderRadius: "50%"}}>{image}</span>}
     </div>
   </Box>
   {isMobile ? 

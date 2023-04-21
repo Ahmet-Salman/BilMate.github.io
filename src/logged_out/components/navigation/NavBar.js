@@ -69,7 +69,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              <a style={{color: "black", textDecoration: "none"}} href="/">BilMate</a>
+              <a style={{color: "black", textDecoration: "none"}} href="/BilMate.github.io">BilMate</a>
             </Typography>
           </div>
           <div>

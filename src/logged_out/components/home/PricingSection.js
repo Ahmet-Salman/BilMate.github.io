@@ -68,7 +68,7 @@ function PricingSection(props) {
           >
             <PriceCard
               title="Onuralp Avcı"
-              image={<img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Onuralp" />}
+              image={<img src={`${process.env.PUBLIC_URL}/images/onur.jpg`} alt="Onuralp" />}
               features={["Android Developer", "Product Deployment Engineer", "Frontend Architect", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`} class="alert-link">Here</a></div>]}
             />
           </Grid>
@@ -103,7 +103,7 @@ function PricingSection(props) {
               title="Ahmet Salman"
               image={
                 <div style={{ float: "right", textAlign: "center" }}>
-                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Ahmet" />
+                  <img src={`${process.env.PUBLIC_URL}/images/ahmet.jpg`} alt="Ahmet" />
                 </div>
                 }
               features={["Backend Developer", "AWS Integration", "DB Designer", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></div>]}
