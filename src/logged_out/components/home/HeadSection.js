@@ -129,7 +129,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Welcome to BilMate Your Housemate Broker
+                          Welcome to BilMate <br/>Your Housemate Broker
                         </Typography>
                       </Box>
                       <div>

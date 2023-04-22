@@ -6,50 +6,55 @@ import {
   Typography,
   isWidthUp,
   withWidth,
-  withStyles
+  withStyles,
 } from "@material-ui/core";
 import PriceCard from "./PriceCard";
 import calculateSpacing from "./calculateSpacing";
 
-const styles = theme => ({
+const styles = (theme) => ({
   containerFix: {
     [theme.breakpoints.down("md")]: {
       paddingLeft: theme.spacing(6),
-      paddingRight: theme.spacing(6)
+      paddingRight: theme.spacing(6),
     },
     [theme.breakpoints.down("sm")]: {
       paddingLeft: theme.spacing(4),
-      paddingRight: theme.spacing(4)
+      paddingRight: theme.spacing(4),
     },
     [theme.breakpoints.down("xs")]: {
       paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2)
+      paddingRight: theme.spacing(2),
     },
     overflow: "hidden",
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1)
+    paddingBottom: theme.spacing(1),
   },
   cardWrapper: {
     [theme.breakpoints.down("xs")]: {
       marginLeft: "auto",
       marginRight: "auto",
-      maxWidth: 340
-    }
+      maxWidth: 340,
+    },
   },
   cardWrapperHighlighted: {
     [theme.breakpoints.down("xs")]: {
       marginLeft: "auto",
       marginRight: "auto",
-      maxWidth: 360
-    }
-  }
+      maxWidth: 360,
+    },
+  },
 });
 
 function PricingSection(props) {
   const { width, classes } = props;
   return (
     <div className="lg-p-top" style={{ backgroundColor: "#FFFFFF" }}>
-      <Typography id="team-section" variant="h3" align="center" className="mg-bottom">
+      <Typography
+        id="team-section"
+        variant="h3"
+        align="center"
+        className="mg-bottom"
+      >
         The Team
       </Typography>
       <div className={classNames("container-fluid", classes.containerFix)}>
@@ -68,8 +73,27 @@ function PricingSection(props) {
           >
             <PriceCard
               title="Onuralp Avcı"
-              image={<img src={`${process.env.PUBLIC_URL}/images/onur.jpg`} alt="Onuralp" />}
-              features={["Android Developer", "Product Deployment Engineer", "Frontend Architect", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`} class="alert-link">Here</a></div>]}
+              image={
+                <img
+                  style={{ borderRadius: "10px" }}
+                  src={`${process.env.PUBLIC_URL}/images/onur.jpg`}
+                  alt="Onuralp"
+                />
+              }
+              features={[
+                "Android Developer",
+                "Product Deployment Engineer",
+                "Frontend Architect",
+                <div>
+                  Check Logbook{" "}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902364_cs491_logbook.html`}
+                    class="alert-link"
+                  >
+                    Here
+                  </a>
+                </div>,
+              ]}
             />
           </Grid>
           <Grid
@@ -83,11 +107,28 @@ function PricingSection(props) {
             <PriceCard
               title="Javid Moradi"
               image={
-              <div style={{ float: "right", textAlign: "center" }}>
-                <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Javid" />
-              </div>
+                <div style={{ float: "right", textAlign: "center" }}>
+                  <img
+                    style={{ borderRadius: "10px" }}
+                    src={`${process.env.PUBLIC_URL}/images/javid.jpg`}
+                    alt="Javid"
+                  />
+                </div>
               }
-              features={["Android Developer", "UI Tester", "UX Expert", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21903645_cs491_logbook.html`} class="alert-link">Here</a></div>]}
+              features={[
+                "Android Developer",
+                "UI Tester",
+                "UX Expert",
+                <div>
+                  Check Logbook{" "}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21903645_cs491_logbook.html`}
+                    class="alert-link"
+                  >
+                    Here
+                  </a>
+                </div>,
+              ]}
             />
           </Grid>
           <Grid
@@ -103,10 +144,27 @@ function PricingSection(props) {
               title="Ahmet Salman"
               image={
                 <div style={{ float: "right", textAlign: "center" }}>
-                  <img src={`${process.env.PUBLIC_URL}/images/ahmet.jpg`} alt="Ahmet" />
+                  <img
+                    style={{ borderRadius: "10px" }}
+                    src={`${process.env.PUBLIC_URL}/images/ahmet.jpg`}
+                    alt="Ahmet"
+                  />
                 </div>
-                }
-              features={["Backend Developer", "AWS Integration", "DB Designer", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></div>]}
+              }
+              features={[
+                "Backend Developer",
+                "AWS Integration",
+                "DB Designer",
+                <div>
+                  Check Logbook{" "}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`}
+                    class="alert-link"
+                  >
+                    Here
+                  </a>
+                </div>,
+              ]}
             />
           </Grid>
           <Grid
@@ -122,10 +180,27 @@ function PricingSection(props) {
               title="Atasagun Samed Şanap"
               image={
                 <div style={{ float: "right", textAlign: "center" }}>
-                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Atasagun" />
+                  <img
+                    style={{ borderRadius: "10px" }}
+                    src={`${process.env.PUBLIC_URL}/images/atasagun.jpg`}
+                    alt="Atasagun"
+                  />
                 </div>
-                }
-              features={["Backend Developer", "Graphic Designer", "Monetization Startegist", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902435_cs491_logbook.html`} class="alert-link">Here</a></div>]}
+              }
+              features={[
+                "Backend Developer",
+                "Graphic Designer",
+                "Monetization Startegist",
+                <div>
+                  Check Logbook{" "}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21902435_cs491_logbook.html`}
+                    class="alert-link"
+                  >
+                    Here
+                  </a>
+                </div>,
+              ]}
             />
           </Grid>
           <Grid
@@ -141,10 +216,26 @@ function PricingSection(props) {
               title="Ebrar Bozkurt"
               image={
                 <div style={{ float: "right", textAlign: "center" }}>
-                  <img src={`${process.env.PUBLIC_URL}/images/javid.jpg`} alt="Ebrar" />
+                  <img
+                    style={{ borderRadius: "10px" }}
+                    src={`${process.env.PUBLIC_URL}/images/javid.jpg`}
+                    alt="Ebrar"
+                  />
                 </div>
-                }
-              features={["Backend Developer", "Security Expert", <div>Check Logbook <a href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`} class="alert-link">Here</a></div>]}
+              }
+              features={[
+                "Backend Developer",
+                "Security Expert",
+                <div>
+                  Check Logbook{" "}
+                  <a
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`}
+                    class="alert-link"
+                  >
+                    Here
+                  </a>
+                </div>,
+              ]}
             />
           </Grid>
         </Grid>
@@ -154,7 +245,7 @@ function PricingSection(props) {
 }
 
 PricingSection.propTypes = {
-  width: PropTypes.string.isRequired
+  width: PropTypes.string.isRequired,
 };
 
 export default withStyles(styles, { withTheme: true })(
