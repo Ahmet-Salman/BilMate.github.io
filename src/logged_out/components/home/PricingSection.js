@@ -218,7 +218,7 @@ function PricingSection(props) {
                 <div style={{ float: "right", textAlign: "center" }}>
                   <img
                     style={{ borderRadius: "10px" }}
-                    src={`${process.env.PUBLIC_URL}/images/javid.jpg`}
+                    src={`${process.env.PUBLIC_URL}/images/ebrar.jpg`}
                     alt="Ebrar"
                   />
                 </div>
