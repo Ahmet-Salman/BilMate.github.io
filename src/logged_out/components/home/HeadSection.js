@@ -138,7 +138,7 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            BilMate is a mobile application that allows students to find suitable
+                            BilMate is a mobile application, developed for the CS 491/2 senior project in Bilkent University, that allows students to find suitable
                             roommates both in university dorms and in flats/apartments.
                             The matching is done by feeding an algorithm a vector of 
                             parameters indicating the preferences of the user.
