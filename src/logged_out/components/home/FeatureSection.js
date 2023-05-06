@@ -29,7 +29,7 @@ const features = [
     color: "#6200EA",
     headline: "Flexibility",
     text:
-      "Whether you want pets in your house or you prefer to live with people who share similar hobbies," + 
+      "Whether you want pets in your house or you prefer to live with people who share similar hobbies, " + 
       "BilMate places your decision in your hand",
     icon: <CalendarTodayIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
@@ -49,7 +49,7 @@ const features = [
     color: "#d50000",
     headline: "Safety and Security",
     text:
-      "Only Bilkent students are allowed access to BilMate, this is enforced by using an emailbased verification system",
+      "Only Bilkent students are allowed access to BilMate, this is enforced by using an email-based verification system",
     icon: <ComputerIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "200"
@@ -58,7 +58,7 @@ const features = [
     color: "#DD2C00",
     headline: "Privacy",
     text:
-      "The team behind BilMate's team takes the privacy of our users very seriously" + 
+      "The team behind BilMate's team takes the privacy of our users very seriously. " + 
       "We keep track only of the most essential data, and all the data on our server is encrypted",
     icon: <BarChartIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
