@@ -75,11 +75,11 @@ const styles = theme => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 555 123456"
+    description: "+905050770339"
   },
   {
     icon: <MailIcon />,
-    description: "support@company.com"
+    description: "bilmate.feedback@gmail.com"
   }
 ];
 
