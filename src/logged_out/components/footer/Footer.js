@@ -103,7 +103,7 @@ function Footer(props) {
             us a unique perspective when it comes to developing innovative solutions 
             for everyday problems.
             <br></br>
-            If you are interested in a colaboration, don't hesitate to contact us
+            If you are interested in a colaboration, do not hesitate to contact us.
             </Typography>
             <Box display="flex" justifyContent="center">
                 <div>
