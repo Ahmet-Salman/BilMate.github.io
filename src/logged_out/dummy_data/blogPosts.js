@@ -213,12 +213,109 @@ const designReportDescription = (
 
 const finalReportDescription = (
   <Fragment>
-    <Typography paragraph></Typography>
+    <Typography paragraph>
+      The final report serves as a
+      comprehensive documentation of the entire project, 
+      encapsulating its objectives, methodologies, findings, 
+      and outcomes. It is a culmination of the project team's 
+      efforts and provides stakeholders, clients, and management 
+      with a detailed account of the project's progress and achievements.
+    </Typography>
+    <Typography paragraph>
+      The report begins with an introduction section that
+      provides an overview of the project, outlining 
+      its purpose and significance. It sets the context
+      by defining the project's scope, goals, and 
+      objectives, which serve as a foundation for the 
+      subsequent sections.
+    </Typography>
+    <Typography paragraph>
+      The project management section highlights the 
+      approach taken to manage the project. It 
+      includes information about the project team 
+      structure, roles and responsibilities, and 
+      the timeline of major milestones. This 
+      section may also discuss any challenges or 
+      obstacles encountered during the project and 
+      how they were addressed.
+    </Typography>
+    <Typography paragraph>
+      The requirements analysis section delves 
+      into the gathering and analysis of the 
+      software system's requirements. It 
+      outlines the functional and non-functional 
+      requirements, user stories, and use cases 
+      that were identified and validated throughout
+      the project. Additionally, any modifications
+      made to the requirements during the course
+      of the project are explained here.
+    </Typography>
+    <Typography paragraph>
+      The design and architecture section presents 
+      the high-level and low-level design of the 
+      software system. It may include diagrams, such as 
+      class diagrams, sequence diagrams, and data models, 
+      which provide an overview of the system's structure 
+      and how different components interact. Furthermore, 
+      this section may discuss the design patterns and 
+      principles applied during the project.
+    </Typography>
+    <Typography paragraph>
+      The implementation section focuses on the 
+      development process and the technologies 
+      used to build the software system. It provides 
+      details about the programming languages, 
+      frameworks, and tools utilized, emphasizing 
+      any unique aspects or challenges encountered 
+      during implementation. This section may 
+      also highlight any innovative solutions 
+      or features developed.
+    </Typography>
+    <Typography paragraph>
+      Overall, the final report serves as a comprehensive 
+      record of the project's lifecycle, providing 
+      stakeholders with a deep understanding of the 
+      project's objectives, methodologies, and outcomes. 
+      It serves as a valuable resource for future reference 
+      and aids in knowledge transfer to ensure the 
+      project's sustainability and success.
+    </Typography>
+    <Typography paragraph>
+      Find a copy of the report{" "}
+      <a
+        href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Report.pdf`}
+        class="alert-link"
+      >
+        Here
+      </a>
+    </Typography>
   </Fragment>
 );
 const finalDemoDescription = (
   <Fragment>
-    <Typography paragraph></Typography>
+    <Typography paragraph>
+    The final presentation is a concise platform 
+    to showcase the project's objectives, 
+    methodologies, findings, and outcomes. 
+    It starts with an introduction, followed 
+    by discussions on project scope, methodologies 
+    used, requirements analysis, design and 
+    architecture, implementation, testing, and 
+    quality assurance. The presentation concludes 
+    with a summary of project outcomes and future
+    plans, providing stakeholders with a 
+    comprehensive understanding of the 
+    project's progress and impact
+    </Typography>
+    <Typography paragraph>
+      Find a copy of the presentation{" "}
+      <a
+        href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Presentation.pdf`}
+        class="alert-link"
+      >
+        Here
+      </a>
+    </Typography>
   </Fragment>
 );
 const content = (
@@ -384,7 +481,7 @@ const posts = [
     date: 1684486800,
     src: `${process.env.PUBLIC_URL}/images/logged_out/finalRep.png`,
     snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Report.pdf`} class="alert-link">Here</a></h4>,
-    content: content,
+    content: finalReportDescription,
   },
   {
     title: "Final Presentation",
@@ -392,7 +489,7 @@ const posts = [
     date: 1684746000,
     src: `${process.env.PUBLIC_URL}/images/logged_out/finalPres.png`,
     snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Presentation.pdf`} class="alert-link">Here</a></h4>,
-    content: content,
+    content: finalDemoDescription,
   },
 ];
 
