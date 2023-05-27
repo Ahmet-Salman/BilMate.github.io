@@ -378,22 +378,22 @@ const posts = [
     ),
     content: designReportDescription,
   },
-  // {
-  //   title: "Final Report",
-  //   id: 5,
-  //   date: 1684486800,
-  //   src: `${process.env.PUBLIC_URL}/images/logged_out/finalRep.png`,
-  //   snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
-  //   content: content,
-  // },
-  // {
-  //   title: "Final Presentation",
-  //   id: 6,
-  //   date: 1684746000,
-  //   src: `${process.env.PUBLIC_URL}/images/logged_out/finalPres.png`,
-  //   snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Demo_Presentation.pdf`} class="alert-link">Here</a></h4>,
-  //   content: content,
-  // },
+  {
+    title: "Final Report",
+    id: 5,
+    date: 1684486800,
+    src: `${process.env.PUBLIC_URL}/images/logged_out/finalRep.png`,
+    snippet: <h4>Download The Report From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Report.pdf`} class="alert-link">Here</a></h4>,
+    content: content,
+  },
+  {
+    title: "Final Presentation",
+    id: 6,
+    date: 1684746000,
+    src: `${process.env.PUBLIC_URL}/images/logged_out/finalPres.png`,
+    snippet: <h4>Download The Presentation From <a href={`${process.env.PUBLIC_URL}/docs/T2335_Final_Presentation.pdf`} class="alert-link">Here</a></h4>,
+    content: content,
+  },
 ];
 
 export default posts;
