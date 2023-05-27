@@ -105,7 +105,7 @@ function Footer(props) {
             <br></br>
             If you are interested in a colaboration, do not hesitate to contact us.
             </Typography>
-            <Box display="flex" justifyContent="center">
+            <Box display="flex" justifyContent="left">
                 <div>
                   {infos.map((info, index) => (
                     <Box display="flex" mb={1} key={index}>

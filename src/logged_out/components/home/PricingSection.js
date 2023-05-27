@@ -229,7 +229,7 @@ function PricingSection(props) {
                 <div>
                   Check Logbook{" "}
                   <a
-                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21901004_cs491_logbook.html`}
+                    href={`${process.env.PUBLIC_URL}/logbooks/T2335_21802824_cs491_logbook.html`}
                     class="alert-link"
                   >
                     Here
